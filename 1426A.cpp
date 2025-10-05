@@ -13,8 +13,13 @@ int main()
     cin>>t;
     while(t--)
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
-        cout<<b<<" "<<c<<" "<<c<<endl;
+        ll n,x;
+        cin>>n>>x;
+        if(n<=2)
+        cout<<1<<endl;
+        else if((n-2)%x==0)
+        cout<<(n-2)/x+1<<endl;
+        else
+        cout<<(n-2)/x+2<<endl;
     }
 }

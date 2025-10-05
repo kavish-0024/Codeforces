@@ -13,8 +13,14 @@ int main()
     cin>>t;
     while(t--)
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
-        cout<<b<<" "<<c<<" "<<c<<endl;
+        ll x,y,n;
+        cin>>x>>y>>n;
+        if(n%x==y)
+        cout<<n<<endl;
+        else if(n%x>y)
+        cout<<n-n%x+y<<endl;
+        else
+        cout<<n-x+y-n%x<<endl;
+
     }
 }

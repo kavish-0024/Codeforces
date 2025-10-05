@@ -13,8 +13,15 @@ int main()
     cin>>t;
     while(t--)
     {
-        string s;
-        cin>>s;
-        if()
+        int n;
+        cin>>n;
+        int x=n%10;
+        int count=0;
+        while(n!=0)
+        {
+            n/=10;
+            count++;
+        }
+        cout<<(x-1)*10+((count*(count+1))/2)<<endl;
     }
 }

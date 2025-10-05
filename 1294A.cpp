@@ -13,8 +13,19 @@ int main()
     cin>>t;
     while(t--)
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
-        cout<<b<<" "<<c<<" "<<c<<endl;
+        ll n,need;
+        vl a(3);
+        F(i,0,3)
+        cin>>a[i];
+        sort(a.begin(),a.end());
+        cin>>n;
+        need=2*a[2]-a[1]-a[0];
+        if(need>n)
+        cout<<"NO"<<endl;
+        else if((n-need)%3!=0)
+        cout<<"NO"<<endl;
+        else
+        cout<<"YES"<<endl;
+
     }
 }

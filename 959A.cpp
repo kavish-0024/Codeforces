@@ -9,12 +9,11 @@ using namespace std;
 int main()
 {
     IOS;
-    int t;
+    ll t;
     cin>>t;
-    while(t--)
-    {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
-        cout<<b<<" "<<c<<" "<<c<<endl;
-    }
+    if(t%2==1)
+    cout<<"Ehab"<<endl;
+    else
+    cout<<"Mahmoud"<<endl;
+
 }

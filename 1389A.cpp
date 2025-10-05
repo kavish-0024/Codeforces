@@ -10,11 +10,20 @@ int main()
 {
     IOS;
     int t;
-    cin>>t;
-    while(t--)
+    cin >> t;
+    while (t--)
     {
-        ll a,b,c,d;
-        cin>>a>>b>>c>>d;
-        cout<<b<<" "<<c<<" "<<c<<endl;
+        ll l, r;
+        cin >> l >> r;
+
+        if (2 * l <= r)
+        {
+            cout << l << " " << 2 * l << "\n";
+        }
+        else
+        {
+            cout << -1 << " " << -1 << "\n";
+        }
     }
+    return 0;
 }

@@ -9,10 +9,14 @@ using namespace std;
 int main()
 {
     IOS;
-    int t;
-    cin>>t;
-    while(t--)
+    int n;
+    string s;
+    unordered_map<char,int>mp;
+    cin>>n>>s;
+    for(int i=0;i<s.size();i++)
     {
-        
+        mp[s[i]]++;
     }
+    
+
 }
